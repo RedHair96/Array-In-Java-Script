@@ -3,6 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Mảng</title>
+    <script type="text/javascript">
+      var myFriends = new Array(5);
+      for (var i = 0; i < myFriends.length; i++){
+        myFriends[i] = prompt("Enter your friend number " + (i + 1) + ": ");
+      }
+      for (var j = 0; j < myFriends.length; j++){
+        document.write("Your name " + (j + 1) + ": " + myFriends[j] + ".<br />  ");
+      }
+    </script>
   </head>
   <body>
 
