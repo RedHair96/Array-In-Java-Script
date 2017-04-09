@@ -8,9 +8,25 @@
       for (var i = 0; i < myFriends.length; i++){
         myFriends[i] = prompt("Enter your friend number " + (i + 1) + ": ");
       }
-      for (var j = 0; j < myFriends.length; j++){
-        document.write("Your name " + (j + 1) + ": " + myFriends[j] + ".<br />  ");
+      for (index in myFriends){
+        document.write("Your name " + (index) + ": " + myFriends[index] + ".<br />  ");
       }
+
+      object = {
+        prop1: "Phan ",
+        prop2: "Huu ",
+        prop3: "Thuan ",
+        prop4: 1996
+      }
+
+      for (index in object){
+        document.write(index + ": " + object[index] + "<br />");
+      }
+      document.write("<br />")
+      document.write(object.prop1);
+      document.write(object.prop2);
+      document.write(object.prop3);
+      document.write(object.prop4);
     </script>
   </head>
   <body>
